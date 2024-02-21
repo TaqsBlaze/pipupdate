@@ -14,7 +14,7 @@ class Updater:
     def packages(self) -> bool:
 
         try:
-            os.system(f"cd {self.WORKING_DIR}")
+            #os.system(f"cd {self.WORKING_DIR}")
             os.system(f"pip freeze > {self.CACHE_FILE}")
 
             with open(self.CACHE_FILE,"r") as paks:
